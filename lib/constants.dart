@@ -8,7 +8,6 @@ class DefaultKey{
   static const PathImageColumn = "pathImage";
   static const PasswordColumn = "password";
   static const TotalLoginColumn = "totalLogin";
-  static const TotalRegisterColumn = "totalRegister";
 
 }
 

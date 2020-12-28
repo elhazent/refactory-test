@@ -4,7 +4,6 @@ class LoginStoryModel {
   String _password;
   String _pathImage;
   int _totalLogin;
-  int _totalRegister;
 
   LoginStoryModel(this._email,this._password,this._pathImage);
 
@@ -12,14 +11,12 @@ class LoginStoryModel {
     _id = json['id'];
     _email = json['email'];
     _totalLogin = json['totalLogin'];
-    _totalRegister = json['totalRegister'];
     _pathImage = json['pathImage'];
     _password = json['password'];
   }
 
   String get email => _email;
   int get totalLogin => _totalLogin;
-  int get totalRegister => _totalRegister;
   String get password => _password;
   String get pathImage => _pathImage;
 
@@ -29,7 +26,6 @@ class LoginStoryModel {
     data['email'] = this._email;
     data['password'] = this._password;
     data['totalLogin'] = this._totalLogin;
-    data['totalRegister'] = this._totalRegister;
     data['pathImage'] = this._pathImage;
     return data;
   }
